@@ -12,6 +12,11 @@ function result() {
   var billamount = document.getElementById("billval").value;
   var peoplecount = document.getElementById("cvalue").value;
   var gt = (billamount / peoplecount).toFixed(2);
-  console.log(gt);
-  document.getElementById("final").innerHTML = "Each person should pay" + " " + gt + " " + "₹";
+
+  if (billamount == "" | billamount <= 0) {
+    alert("Invalid entry detected, Please retry");
+  } else {
+    console.log(gt);
+    document.getElementById("final").innerHTML = "Each person should pay" + " " + gt + " " + "₹";
+  }
 }
