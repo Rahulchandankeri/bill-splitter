@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
+    <title>Bill split</title>
+</head>
+<body>
+
+    <div class="billsplit-body">
+        <h1> SPLIT BILLS</h1>
+
+        <div id="block">
+            <p>How much was your bill ?</p>
+            <input type="number" id="billval" placeholder="Enter your bill amount">
+        </div>
+
+        <div id="block">
+            <p>How many people sharing the bill?</p>
+            <input type="number" class="getpeople" id="cvalue" value="1" min="1">
+            <div style="display: flex; margin: auto;justify-content: center;">
+            <input type="button" min="1" max="1" id="dec" value="-" onclick="dec()">
+            <input type="button" min="1" max="50" id="inc" value="+" onclick="inc()">
+        </div>
+
+        <div id="block">
+            <h2 id="final"></h2>
+        </div>
+
+        <div id="block">
+            <button class="calculate-btn" onclick="result()">Calculate</button>
+        </div>
+
+        
+    </div>
+    <script src="engine.js"></script>
+    
+</body>
+</html>
