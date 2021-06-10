@@ -13,12 +13,12 @@
     <div class="billsplit-body">
         <h1> SPLIT BILLS</h1>
 
-        <div id="block">
+        <div class="block">
             <p>How much was your bill ?</p>
             <input type="number" id="billval" placeholder="Enter your bill amount">
         </div>
 
-        <div id="block">
+        <div class="block">
             <p>How many people sharing the bill?</p>
             <input type="number" class="getpeople" id="cvalue" value="1" min="1">
             <div style="display: flex; margin: auto;justify-content: center;">
@@ -26,11 +26,11 @@
             <input type="button" min="1" max="50" id="inc" value="+" onclick="inc()">
         </div>
 
-        <div id="block">
+        <div class="block">
             <h2 id="final"></h2>
         </div>
 
-        <div id="block">
+        <div class="block">
             <button class="calculate-btn" onclick="result()">Calculate</button>
         </div>
 
