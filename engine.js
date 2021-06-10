@@ -12,5 +12,5 @@ var gt = billamount/peoplecount;
 
     console.log(gt);
 
-    document.getElementById("final").innerHTML = gt
+    document.getElementById("final").innerHTML = "Each person should pay" + gt + "₹"
 }
