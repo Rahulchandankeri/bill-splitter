@@ -1,4 +1,4 @@
-$primary-font-col: white;
+$primary-font-col: #646363;
 $primary-font-size: 1.2em;
 
 @mixin flex_prop {
@@ -26,14 +26,18 @@ $primary-font-size: 1.2em;
 body{
     font-family: Segoe UI;
     scroll-behavior: smooth;
-    background: linear-gradient(rgba(220, 0, 75, 0.67) 0%, #ff6b6b 100%);
+    
 }
 
 .billsplit-body{
-    width: 100%;
+    width: 500px;
+    max-width: 90%;
     height:100%;
     padding-bottom: 2%;
-    background: linear-gradient(rgba(220, 0, 75, 0.67) 0%, #ff6b6b 100%);
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    margin: 2% auto auto auto;
     
 
     h1{
@@ -54,25 +58,27 @@ body{
             @include flex_prop();
             width: 100%;
             padding: 5px;
+            background: #fff;
+            border: 1px solid #b1b1b1;
         
         }
         #inc{
             @include btnid();
-            background: #ffffff;
-            color: #3AA515;
+            background: #3AA515;
+            color: #ffffff;
         }
         #dec{
             @include btnid();
-            background: #ffffff;  
-            color: #FF4E4E;
+            background: #FF4E4E;  
+            color: #ffffff;
             
         }
         input[type=number]{
             display: block;
             margin: 10px auto auto auto;
             max-width: 100%;
-            background: $primary-font-col;
-            border: none;
+            background: #fff;
+            border: 1px solid #b1b1b1;
             outline: none;
             font-size: $primary-font-size;
             font-weight: bold;
@@ -87,7 +93,7 @@ body{
             height: 46px;
             border-radius: 6px;
             background: #535353;
-            color: $primary-font-col;
+            color: #fff;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
             
             
